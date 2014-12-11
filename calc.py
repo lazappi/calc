@@ -7,7 +7,6 @@ def add_all(nums):
 def multiply_all(nums):
     return reduce(lambda a, b: a * b, nums)
 
-
 def divide_all(nums):
     return reduce(lambda a, b: a / b, nums)
 
@@ -27,9 +26,10 @@ if __name__ == '__main__':
     elif command == 'divide':
         print(divide_all(nums))
     elif command == 'min':
-         print(min(nums))
+        print(min(nums))
     elif command == 'max':
         print(max(nums))
     else:
-        usage = "calc.py [add|multiply|min][max] NUM1 [NUM2 [NUM3 [...]]]"
+        usage = "calc.py [add|multiply|min|max|subtract|divide] "
+        usage += "NUM1 [NUM2 [NUM3 [...]]]"
         print(usage)
